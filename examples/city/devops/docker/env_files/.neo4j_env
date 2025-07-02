@@ -1,0 +1,9 @@
+### https://neo4j.com/docs/operations-manual/current/configuration/set-initial-password/
+### The default password is `neo4j`
+
+
+INITIAL_MEMORY=6G
+MAXIMUM_MEMORY=12G
+STABLE_EXTENSIONS=
+COMMUNITY_EXTENSIONS=
+#NEO4J_AUTH=neo4j

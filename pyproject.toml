@@ -1,0 +1,44 @@
+[project]
+name = "simplegeograph"  # Required
+version = "0.0.1"  # Required
+description = "Convert geospatial networks to graph representations"
+readme = "README.md"
+requires-python = ">=3.13"
+license = {file = "LICENSE.txt"}
+keywords = ["geospatial", "graph", "network", "gis"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Scientific/Engineering :: GIS",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only"
+]
+
+dependencies = [
+  "pydantic",
+  "neomodel",
+  "numpy",
+  "sqids"
+]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = ["coverage"]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/simplegeograph"
+"Issue Tracker" = "https://github.com/yourusername/simplegeograph/issues"
+
+[build-system]
+requires = ["setuptools>=80.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-data = {"simplegeograph" = ["*.dat"]}
+
+[tool.setuptools.packages.find]
+include = ["simplegeograph*"]
+namespaces = false

@@ -1,0 +1,11 @@
+{
+  "exclude": ["**/__pycache__"],
+  "typeCheckingMode": "strict",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": true,
+  "reportUnknownParameterType": true,
+  "reportUnknownVariableType": true,
+  "reportUnknownMemberType": true,
+  "reportImportCycles": true,
+  "reportUnusedImport": true
+}

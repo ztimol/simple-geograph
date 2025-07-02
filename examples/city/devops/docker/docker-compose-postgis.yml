@@ -1,0 +1,12 @@
+
+
+services:
+  sggcitypostgis:
+    container_name: sgg-city-postgis
+    platform: linux/amd64
+    ports:
+      - 5432:5432
+    env_file:
+      - ./env_files/.postgis_env
+    image: postgis/postgis
+    restart: always

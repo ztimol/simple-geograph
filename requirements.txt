@@ -1,0 +1,6 @@
+#numpy==2.3.1
+sqids==0.5.2
+annotated-types==0.7.0
+neomodel==5.5.0
+pydantic==2.11.7
+shapely==2.1.1
