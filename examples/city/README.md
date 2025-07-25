@@ -13,3 +13,6 @@
 5. `pip install -e [path to simple-geograph diretory]`
 
 6. run `main.py` in the app directory
+
+
+Source for subway data: https://www.crunchydata.com/blog/postgis-for-newbies
