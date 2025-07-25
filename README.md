@@ -9,7 +9,7 @@ NB: This project is currently in alpha.
 - Maintins geometry information so it's not lost during conversion
 - Can readily be integrated with geospatial databases (such as PostGIS, SpatialLite), geospatial libraries (such as GeoPandas), graph databases (Neo4j), and graph libraries (NetworkX)
 
-If you use simple-geograph in your project please link this project
+If you use simple-geograph in your project please link this repo.
 
 ### Example script
 ```
