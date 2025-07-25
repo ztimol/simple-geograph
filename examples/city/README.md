@@ -15,4 +15,11 @@
 6. run `main.py` in the app directory
 
 
+### The geospatial query
+
+As part of running the script it's important to understand the query in `nyc_subway.sql`. The query generates the data required for the transform algorithm to work.
+
+
+
+
 Source for subway data: https://www.crunchydata.com/blog/postgis-for-newbies
