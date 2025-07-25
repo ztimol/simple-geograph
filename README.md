@@ -27,4 +27,4 @@ gtn.transform(geo_data)
 # save data to neo4j
 gtn.to_neo4j(db_config=NEO4J_CONFIG)
 ```
-A more comprehensive example can be found. See [city subway_app](examples/city/README.md)
+A more comprehensive example can be found. See [city subway_app](examples/city/)
