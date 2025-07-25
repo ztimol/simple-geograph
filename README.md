@@ -11,6 +11,19 @@ NB: This project is currently in alpha.
 
 If you use simple-geograph in your project please link this repo.
 
+### The Transform algorithm
+
+The approach for transforming a geospatial LineString and Points to a graph network has several steps:
+
+1. Identify the LineString layer that should be converted to edges This should only be a LineString and not a MultiLineString
+2. Identify the Point layers(s) that should be converted to nodes
+
+*with a geospatial query*
+3. For each LineString find every other LineString that intersects with the _start_ Point of the LineString of interest (dWithin can be used)
+4. For each LineString find every other LineString that intersects with the _end_ Point of the LineString of interest (dWithin can be used)
+4. For each LineString find every other LineString that intersects with a non-termini point LineString of interest (dWithin can be used)
+5. For each LineString find every Point that intersects with the LineString of interest (dWithin can be used)
+
 ### Example script
 ```
 from simplegeograph import GeoGraph
