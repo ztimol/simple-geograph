@@ -18,14 +18,14 @@ The approach for transforming a geospatial LineString and Points to a graph netw
 1. Identify the LineString layer that should be converted to edges This should only be a LineString and not a MultiLineString
 2. Identify the Point layers(s) that should be converted to nodes
 
-**with a geospatial query**
+_**with a geospatial query**_
 
 3. For each LineString find every other LineString that intersects with the _start_ Point of the LineString of interest (dWithin can be used)
 4. For each LineString find every other LineString that intersects with the _end_ Point of the LineString of interest (dWithin can be used)
 5. For each LineString find every other LineString that intersects with a non-termini point LineString of interest (dWithin can be used)
 6. For each LineString find every Point that intersects with the LineString of interest (dWithin can be used)
 
-**In code**
+_**in code**_
 
 7. For each LineString find the start and end Point geometries
 8. For each LineString find the Points of intersection of every other intersecting LineString
@@ -34,7 +34,7 @@ The approach for transforming a geospatial LineString and Points to a graph netw
 11. For each LineString add a unique `node_key` to each Point and create an ordered array. Each element in this array can be a node
 12. For each LineString, iterate over the ordered array of element. Create a new array with each element containing a `from_node_key` and a `to_node_key`. Each element in this array can be an edge.
 
-**Save to graph**
+_**create graph**_
     
 13. Create the graph network using the arrays of nodes and edges
 
