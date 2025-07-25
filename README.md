@@ -21,7 +21,7 @@ geo_data: list = query_data()
 
 gtn = GeoGraph()
 
-# transform to an objects reprsenting nodes and edges
+# transform to objects reprsenting nodes and edges
 gtn.transform(geo_data)
 
 # save data to neo4j
